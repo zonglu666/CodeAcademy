@@ -2,3 +2,4 @@
 node_modules
 yarn.lock
 !dist
+supply/client/yarn-error.log
