@@ -1,4 +1,6 @@
-# 项目构建流程
+# 构建项目
+
+React + Ant Design
 
 ## 初始化
 
@@ -41,7 +43,7 @@ Webpack 本身只能处理 JavaScript 模块，如果要处理其他类型的文
 
 ## Babel
 
-Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
+Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。支持 React 的一些特性（如 JSX 语法）
 
 `yarn add babel-loader --dev` 安装 babel-loader 库
 
@@ -51,10 +53,28 @@ Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转�
 
 `yarn add babel-preset-react --dev`
 
-## react
+## React
 
 TypeSearch 搜索 @types 库 https://microsoft.github.io/TypeSearch/
 
 `yarn add @types/react @types/react-dom react react-dom`
+
+## SCSS 预处理器
+
+SCSS 是 Sass 3 引入新的语法，其语法完全兼容 CSS3，并且继承了 Sass 的强大功能。也就是说，任何标准的 CSS3 样式表都是具有相同语义的有效的 SCSS 文件。另外，SCSS 还能识别大部分 CSS hacks（一些 CSS 小技巧）和特定于浏览器的语法，例如：古老的 IE filter 语法。
+
+另一方面，Sass 换行和缩进比较影响阅读，所以选择使用 SCSS
+
+SCSS 主要有变量、嵌套、@import、@mixin、继承等特性，具体的在开发过程中可以具体感受
+
+`yarn add sass-loader style-loader css-loader --dev`
+
+`yarn add node-sass --dev`
+
+_由于 node-sass 安装太慢，使用淘宝镜像`yarn add node-sass --registry=https://registry.npm.taobao.org --disturl=https://npm.taobao.org/dist --sass-binary-site=http://npm.taobao.org/mirrors/node-sass`_
+
+`yarn add mini-css-extract-plugin --dev`
+
+-node-sass
 
 # 项目结构
