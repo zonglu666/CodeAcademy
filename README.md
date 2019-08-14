@@ -4,16 +4,16 @@
 
 仿照慕课网开发的教育平台，利用现在比较流行的 mono 模式，也就是把多个 project 放在一个 repository 中，这样就方便我们系统内的一些公共模块的调用，而不用发布 npm 包。
 
-### supply 文件夹
+### platform 文件夹
 
-supply 文件夹是平台主要文件夹，所有的系统都在这个文件夹中开发，目前来说，这个项目暂时就是以下三个系统组成。其中，前端网站和后端接口是最重要的，需要先开发。
+platform 文件夹是平台主要文件夹，所有的系统都在这个文件夹中开发，目前来说，这个项目暂时就是以下三个系统组成。其中，前端网站和后端接口是最重要的，需要先开发。
 
 - 前端网站 web
   web 项目：使用 react.js 框架，graphql client 作为接口技术，UI 设计采用 ant 框架
 - 后端接口 server
-  supply/server 项目：使用 express 框架搭建接口服务开发需要的 restful 接口，并且使用 graphql server 开发后端 graphql 接口
+  server 项目：使用 express 框架搭建接口服务开发需要的 restful 接口，并且使用 graphql server 开发后端 graphql 接口
 - 后台管理系统 dashboard
-  supply/dashboard 项目：后端管理系统主要是内部员工使用的数据可视化管理平台
+  dashboard 项目：后端管理系统主要是内部员工使用的数据可视化管理平台
 
 ### @public 文件夹
 
