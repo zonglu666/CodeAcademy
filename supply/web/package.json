@@ -30,7 +30,10 @@
     "@types/react": "^16.8.25",
     "@types/react-dom": "^16.8.5",
     "antd": "^3.21.2",
+    "apollo-boost": "^0.4.4",
+    "graphql": "^14.4.2",
     "react": "^16.8.6",
+    "react-apollo": "^3.0.0",
     "react-dom": "^16.8.6",
     "tsconfig-paths": "^3.8.0"
   }

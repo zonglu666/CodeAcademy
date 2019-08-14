@@ -2,6 +2,12 @@
 
 React + Ant Design
 
+## 项目架构
+
+components
+
+styles
+
 ## 初始化
 
 `yarn init` 构建 Client 端项目
