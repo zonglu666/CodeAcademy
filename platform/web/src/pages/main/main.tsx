@@ -6,15 +6,16 @@ import "./main.scss";
 const Main: React.FC = () => {
   return (
     <Layout>
-      <Header>
+      <Header className="header">
         <div className="logo" />
         <Menu
           theme="dark"
           mode="horizontal"
-          defaultSelectedKeys={["2"]}
-          style={{ lineHeight: "64px" }}
+          defaultSelectedKeys={["1"]}
+          className="menu"
         >
-          <Menu.Item key="1">nav 1</Menu.Item>
+          <Menu.Item key="1">首页</Menu.Item>
+          <Menu.Item key="2">社区</Menu.Item>
         </Menu>
       </Header>
       <Content style={{ padding: "0 50px" }}>
