@@ -5,11 +5,11 @@ import "./main.scss";
 
 const Main: React.FC = () => {
   return (
-    <Layout>
+    <Layout className="layout">
       <Header className="header">
         <div className="logo" />
         <Menu
-          theme="dark"
+          theme="light"
           mode="horizontal"
           defaultSelectedKeys={["1"]}
           className="menu"
