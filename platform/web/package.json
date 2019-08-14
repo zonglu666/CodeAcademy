@@ -8,6 +8,7 @@
     "build": "NODE_ENV=production webpack"
   },
   "devDependencies": {
+    "react-router-dom": "^5.0.1",
     "@babel/core": "^7.5.5",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
@@ -27,13 +28,14 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "@types/react-router-dom": "^4.3.3",
     "@types/react": "^16.8.25",
     "@types/react-dom": "^16.8.5",
     "antd": "^3.21.2",
     "apollo-boost": "^0.4.4",
+    "react-apollo": "^3.0.0",
     "graphql": "^14.4.2",
     "react": "^16.8.6",
-    "react-apollo": "^3.0.0",
     "react-dom": "^16.8.6",
     "tsconfig-paths": "^3.8.0"
   }

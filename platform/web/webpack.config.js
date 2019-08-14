@@ -19,7 +19,7 @@ module.exports = {
 
   // 配置 devServer
   devServer: {
-    port: 3000,
+    port: 3006,
     historyApiFallback: true,
     inline: true
   },

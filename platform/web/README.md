@@ -2,7 +2,7 @@
 
 React + Ant Design
 
-## 项目架构
+## 项目结构
 
 components
 

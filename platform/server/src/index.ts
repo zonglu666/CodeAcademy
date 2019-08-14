@@ -17,18 +17,6 @@ const playground: any = {
   }
 };
 
-// const typeDefs = `
-// type Query {
-//   info: String!
-// }
-// `;
-
-// const resolvers = {
-//   Query: {
-//     info: () => `HELLO`
-//   }
-// };
-
 const server = new ApolloServer({
   playground,
   typeDefs,
