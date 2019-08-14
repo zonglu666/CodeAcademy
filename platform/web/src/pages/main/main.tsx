@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout, Menu, Breadcrumb } from "antd";
 const { Header, Footer, Content } = Layout;
+import "./main.scss";
 
 const Main: React.FC = () => {
   return (
