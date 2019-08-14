@@ -7,4 +7,6 @@ const schema = fs.readFileSync(path.join(__dirname, "schema.graphql"), {
   encoding: "utf8"
 });
 
-export const typeDefs = gql(schema);
+console.log("schema", schema);
+
+// export const typeDefs = gql(schema);
