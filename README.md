@@ -6,18 +6,20 @@
 
 ### platform 文件夹
 
-platform 文件夹是平台主要文件夹，所有的系统都在这个文件夹中开发，目前来说，这个项目暂时就是以下三个系统组成。其中，前端网站和后端接口是最重要的，需要先开发。
+platform 文件夹，该平台所有的系统主要代码都在这个文件夹中开发，目前来说，这个项目暂时就是以下三个系统组成。其中，前端网站和后端接口是最重要的，因为是面向 client 端的。
 
 - 前端网站 web
   web 项目：使用 react.js 框架，graphql client 作为接口技术，UI 设计采用 ant 框架
+
 - 后端接口 server
-  server 项目：使用 express 框架搭建接口服务开发需要的 restful 接口，并且使用 graphql server 开发后端 graphql 接口
+  server 项目：使用 express 框架搭建接口服务开发一些需要的 restful 接口，并且使用 graphql server 开发后端 graphql 接口
+
 - 后台管理系统 dashboard
   dashboard 项目：后端管理系统主要是内部员工使用的数据可视化管理平台
 
 ### @public 文件夹
 
-由于之前开发采坑项目所用到的一些公共函数或代码，比如 mongoose 的 schema 定义、集成微信登录等基础功能，都可以放在这里面。
+由于之前开发采坑项目所用到的一些公共函数或代码，比如 mongoose 的 schema 定义、集成微信登录的代码、发送邮件的代码等基础功能代码，都可以放在这里面开发，这样就不用发 npm 包了，通过 ts-config 的配置直接可以引用进来。
 
 ## 技术栈介绍
 
