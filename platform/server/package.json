@@ -5,41 +5,21 @@
   "author": "lXSPandora",
   "license": "MIT",
   "private": true,
+  "scripts": {},
   "devDependencies": {
     "@types/express": "^4.16.0",
     "@types/graphql": "^0.13.4",
     "@types/mongodb": "^3.1.14",
-    "tsconfig-paths": "^3.7.0",
-    "tslint": "^5.14.0",
-    "tslint-config-prettier": "^1.18.0",
-    "tslint-plugin-prettier": "^2.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.5.3"
   },
   "dependencies": {
     "apollo-server-express": "^2.1.0",
     "dataloader": "^1.4.0",
     "dotenv": "^6.1.0",
     "express": "^4.16.3",
-    "graphql": "^0.13.2",
+    "graphql": "^14.4.2",
     "request": "^2.88.0",
-    "tsconfig-paths": "^3.7.0"
-  },
-  "pre-commit": "lint:staged",
-  "lint-staged": {
-    "*.js": [
-      "yarn prettier",
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "scripts": {
-    "babel-node": "babel-node",
-    "start": "nodemon --exec npm run babel-node -- src/index.js",
-    "debug": "nodemon --exec npm run babel-node -- src/index.js --inspect",
-    "lint": "eslint \"src/**/*.js*\"",
-    "lint:staged": "lint-staged",
-    "prettier": "prettier --write --single-quote true --trailing-comma all --print-width 120",
-    "prettier:all": "prettier --write --single-quote true --trailing-comma all --print-width 120 --write 'src/**/*.js'",
-    "docker:up": "docker-compose up --build"
+    "mongoose": "^5.2.12",
+    "tsconfig-paths": "^3.8.0"
   }
 }

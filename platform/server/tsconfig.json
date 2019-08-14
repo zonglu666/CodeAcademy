@@ -14,7 +14,12 @@
     "baseUrl": ".",
     "lib": ["esnext"],
     "paths": {
-      "*": ["node_modules/*", "node_modules/@types/*", "../../@xiangx/@types/*"]
+      "*": [
+        "node_modules/*",
+        "node_modules/@types/*",
+        "../../@xiangx/@types/*"
+      ],
+      "@public/*": ["../../@public/*/src", "../../@public/*"]
     }
   },
   "include": ["src/**/*"],
