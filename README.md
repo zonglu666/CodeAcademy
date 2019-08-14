@@ -9,12 +9,15 @@
 platform 文件夹，该平台所有的系统主要代码都在这个文件夹中开发，目前来说，这个项目暂时就是以下三个系统组成。其中，前端网站和后端接口是最重要的，因为是面向 client 端的。
 
 - 前端网站 web
+
   web 项目：使用 react.js 框架，graphql client 作为接口技术，UI 设计采用 ant 框架
 
 - 后端接口 server
+
   server 项目：使用 express 框架搭建接口服务开发一些需要的 restful 接口，并且使用 graphql server 开发后端 graphql 接口
 
 - 后台管理系统 dashboard
+
   dashboard 项目：后端管理系统主要是内部员工使用的数据可视化管理平台
 
 ### @public 文件夹
