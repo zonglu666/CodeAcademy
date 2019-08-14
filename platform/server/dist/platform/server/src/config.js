@@ -9,6 +9,7 @@ function getConfig() {
     if (!MONGO_URL)
         throw "Missing env.MONGO_URL";
     return {
+        PORT: process.env.PORT ? parseInt(process.env.PORT) : 4000,
         ENVIRONMENT: environment_1.parseEnvironment(ENVIRONMENT),
         MONGO_URL
     };

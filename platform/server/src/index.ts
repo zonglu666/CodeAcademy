@@ -6,7 +6,7 @@ import express from "express";
 import mongoose from "mongoose";
 import config from "./config";
 import { ApolloServer } from "apollo-server-express";
-import { resolvers } from "./api/graphql";
+import { typeDefs, resolvers } from "./api/graphql";
 
 mongoose.connect(config.MONGO_URL);
 
@@ -16,3 +16,31 @@ const playground: any = {
     "editor.cursorShape": "line"
   }
 };
+
+// const typeDefs = `
+// type Query {
+//   info: String!
+// }
+// `;
+
+// const resolvers = {
+//   Query: {
+//     info: () => `HELLO`
+//   }
+// };
+
+const server = new ApolloServer({
+  playground,
+  typeDefs,
+  resolvers
+});
+
+const app = express();
+
+server.applyMiddleware({ app });
+
+app.listen({ port: config.PORT }, () =>
+  console.log(
+    `🚀 Server ready at http://localhost:${config.PORT}${server.graphqlPath}`
+  )
+);

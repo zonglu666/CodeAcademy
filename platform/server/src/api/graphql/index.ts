@@ -9,4 +9,4 @@ const schema = fs.readFileSync(path.join(__dirname, "schema.graphql"), {
 
 console.log("schema", schema);
 
-// export const typeDefs = gql(schema);
+export const typeDefs = gql(schema);
