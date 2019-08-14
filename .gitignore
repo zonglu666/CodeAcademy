@@ -3,5 +3,5 @@ node_modules
 yarn.lock
 !dist
 *.log
-.DS_Store
+*.DS_Store
 package-lock.json
