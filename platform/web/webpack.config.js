@@ -49,21 +49,22 @@ module.exports = {
         include: path.resolve(__dirname, "src")
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
         use: [
           {
             loader: "url-loader",
             options: {
-              //表示低于50000字节（50K）的图片会以 base64编码
+              //表示低于50000字节（50K）的图片会以 base64编码存入bundle中
               limit: 50000,
               // 打包时输出文件的位置  它应该是 上文中的output中的path 和 这里的值的连接
-              outputPath: `${outputPath}/asset/images`,
-              filename: "[name].[hash:5].[ext]",
+              // outputPath: `${outputPath}/asset/images`,
+              // filename: "[name].[hash:5].[ext]",
               // 浏览器中的加载路径
-              pulbicPath: "./dist/asset/images"
+              pulbicPath: path.resolve(__dirname, "src")
             }
           }
-        ]
+        ],
+        include: path.resolve(__dirname, "src")
       }
     ]
   },

@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Menu, Breadcrumb, Row, Col } from "antd";
 const { Header, Footer, Content } = Layout;
 import "./main.scss";
+import logo from "../../images/logo.png";
 
 const Main: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Main: React.FC = () => {
         <Row>
           <Col span={4}>
             <div className="logo">
-              <img src="./logo.png" />
+              <img src={logo} />
             </div>
           </Col>
           <Col span={12}>
