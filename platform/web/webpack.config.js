@@ -3,6 +3,8 @@ const CleanWebpackPlugin = require("clean-webpack-plugin").CleanWebpackPlugin;
 const webpack = require("webpack");
 const path = require("path");
 
+const outputPath = path.resolve(__dirname, "dist");
+
 module.exports = {
   // 设置 sourcemaps 为 eval 模式，将模块封装到 eval 包裹起来
   devtool: "eval",
@@ -12,9 +14,9 @@ module.exports = {
 
   // 配置 devServer 的输出目录和 publicPath
   output: {
-    filename: "bundle.js",
     publicPath: "/",
-    path: path.resolve(__dirname, "dist")
+    path: outputPath,
+    filename: "[name].bundle.[hash:5].js"
   },
 
   // 配置 devServer
@@ -45,6 +47,23 @@ module.exports = {
         test: /\.scss$/,
         loader: ["style-loader", "css-loader", "sass-loader"],
         include: path.resolve(__dirname, "src")
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              //表示低于50000字节（50K）的图片会以 base64编码
+              limit: 50000,
+              // 打包时输出文件的位置  它应该是 上文中的output中的path 和 这里的值的连接
+              outputPath: `${outputPath}/asset/images`,
+              filename: "[name].[hash:5].[ext]",
+              // 浏览器中的加载路径
+              pulbicPath: "./dist/asset/images"
+            }
+          }
+        ]
       }
     ]
   },

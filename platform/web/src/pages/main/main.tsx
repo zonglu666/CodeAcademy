@@ -9,7 +9,9 @@ const Main: React.FC = () => {
       <Header className="header">
         <Row>
           <Col span={4}>
-            <div className="logo" />
+            <div className="logo">
+              <img src="./logo.png" />
+            </div>
           </Col>
           <Col span={12}>
             <Menu
