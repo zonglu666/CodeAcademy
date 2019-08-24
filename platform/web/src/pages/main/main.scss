@@ -1,15 +1,77 @@
+$header-height: 64px;
+$header-font-color: #00bfff;
+$header-background-color: #00bfff;
+.ant-layout {
+  background-color: white;
+}
 .header {
-  padding: 0px;
-  height: 60px;
-  background: 0%;
-  .logo {
-    width: 120px;
-    height: 31px;
-    background: grey;
-    margin: 16px 24px 16px 0;
+  padding: 0px 50px;
+  background-color: $header-background-color;
+  height: $header-height;
+  .title {
     float: left;
+    img {
+      height: 28px;
+    }
   }
-  .menu {
+  .ant-menu {
     float: left;
+    line-height: $header-height;
+    background-color: $header-background-color;
+    color: white;
+    .ant-menu-item {
+      top: 0px;
+      border: none;
+      font-size: 18px;
+    }
+    .ant-menu-item-selected,
+    .ant-menu-item-active {
+      background-color: white;
+      color: $header-font-color;
+    }
+  }
+  .avatar {
+    margin-right: 10px;
+    float: right;
+    color: white;
+    img {
+      height: 38px;
+    }
+    span {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+  }
+}
+.main {
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  height: 88px;
+  background-color: #33363b;
+  color: white;
+  .footer-menu {
+    span {
+      margin-right: 5px;
+    }
+  }
+  .copy-right {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .follow-us {
+    float: right;
+    span {
+      width: 25%;
+      padding-left: 28px;
+      img {
+        height: 38px;
+      }
+    }
   }
 }

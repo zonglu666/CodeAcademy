@@ -5,7 +5,11 @@ const path = require("path");
 
 const outputPath = path.resolve(__dirname, "dist");
 
+// Webpack 基于 Node 构建的，所以之所所有 Node API 语法
+// 向外导出配置信息，export default {} 是向外导出模 API，此处不支持
 module.exports = {
+  mode: "production",
+
   // 设置 sourcemaps 为 eval 模式，将模块封装到 eval 包裹起来
   devtool: "eval",
 
