@@ -12,7 +12,7 @@ const Page: React.FC = () => {
     <Layout className="layout">
       <Header></Header>
       <Content style={{ padding: "0 50px" }}>
-        <Body></Body>
+        <Body content="Hello World"></Body>
       </Content>
       <Footer></Footer>
     </Layout>
