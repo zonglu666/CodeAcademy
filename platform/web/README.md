@@ -1,16 +1,33 @@
-# 构建脚手架
+# 项目运行
+
+## 项目启动
+
+`yarn start` 执行package.json中配置的start脚本，启动项目
+
+## 目录结构
+```
+| -- src文件夹 项目源码    
+|     | -- components 组件
+|     | -- images 图片
+|     | -- pages 页面
+|     | -- styles 样式
+|
+| -- dist文件夹 webpack打包后的项目
+|
+| -- package.json
+|
+| -- tsconfig.json
+|
+| -- webpack.config.js
+```
+
+# 项目搭建脚手架
 
 React + Ant Design
 
-## 项目结构
-
-components
-
-styles
-
 ## 初始化
 
-`yarn init` 构建 Client 端项目
+`yarn init` 创建Node项目
 
 ## TypeScript
 
@@ -83,4 +100,4 @@ _由于 node-sass 安装太慢，使用淘宝镜像`yarn add node-sass --registr
 
 -node-sass
 
-# 项目结构
+
