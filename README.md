@@ -142,5 +142,4 @@ function f() {
 let 和 const 是 ES6 新增的定义类型
 
 let 是不会变量提升的，而且有暂时性死区。也就是 let 必须先声明，后面的代码才能够使用，否则 Uncaught ReferenceError 错误。
-const 只能够初始化赋值，相当于是定义一个常量
-。
+const 只能够初始化赋值，相当于是定义一个常量。
