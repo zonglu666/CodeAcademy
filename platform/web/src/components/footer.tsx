@@ -6,7 +6,7 @@ import bilibili from "../images/bilibili.png";
 import wechat from "../images/wechat.png";
 import sina from "../images/sina.png";
 
-const Component: React.FC = () => {
+const PageFooter: React.FC = () => {
   return (
     <Footer className="footer">
       <Col span={10}>
@@ -46,4 +46,4 @@ const Component: React.FC = () => {
   );
 };
 
-export default Component;
+export default PageFooter;

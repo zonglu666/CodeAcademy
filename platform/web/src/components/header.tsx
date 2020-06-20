@@ -5,7 +5,7 @@ import "./header.scss";
 import title from "../images/title.png";
 import avatar from "../images/avatar.png";
 
-const Component: React.FC = () => {
+const PageHeader: React.FC = () => {
   return (
     <Header className="header">
       <Row>
@@ -33,4 +33,4 @@ const Component: React.FC = () => {
   );
 };
 
-export default Component;
+export default PageHeader;

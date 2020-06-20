@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Layout } from "antd";
 const { Content } = Layout;
 import "./main.scss";
