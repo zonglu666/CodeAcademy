@@ -18,6 +18,7 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "@types/body-parser": "^1.19.0",
     "apollo-server-express": "^2.1.0",
     "async": "^3.1.0",
     "body-parser": "^1.19.0",
@@ -27,6 +28,7 @@
     "graphql": "^14.4.2",
     "graphql-tools": "^4.0.5",
     "mongoose": "^5.6.3",
+    "mysql": "^2.18.1",
     "request": "^2.88.0",
     "tsconfig-paths": "^3.8.0"
   }

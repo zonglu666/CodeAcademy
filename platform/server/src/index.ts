@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 import config from './config';
 import { ApolloServer } from 'apollo-server-express';
 import { typeDefs, resolvers } from './api/graphql';
-
+import restRouter from './api/rest';
 mongoose.connect(config.MONGO_URL);
 
 const playground: any = {
@@ -24,6 +24,7 @@ const server = new ApolloServer({
 });
 
 const app = express();
+app.use('/rest', restRouter);
 
 server.applyMiddleware({ app });
 

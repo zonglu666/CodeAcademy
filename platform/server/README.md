@@ -4,7 +4,7 @@ Express + GraphQL + Mongoose
 
 GraphQL 服务器使用开源的 Apollo Server 库。它可与许多 Node.js HTTP 服务器框架配合使用。Apollo Server 是目前使任何来源的数据快速构建为 GraphQL API 的最佳方式。
 
-本项目考虑将 Apollo Server 与 Express 做集成，apollo-server 库换成 apollo-server-express 库。
+本项目考虑将 Apollo Server 与 Express 做集成，apollo-server 库换成 apollo-server-express 库。Apollo Server 也支持所有的 Node.js HTTP 服务器框架：Express、Connect、HAPI、Koa 和 NestJs。
 
 未来后端接口形式有两种:
 
@@ -110,3 +110,5 @@ GraphQL 的类型系统以及如何描述数据的查询结果。
 ### Mongoose
 
 Mongoose 是 MongoDB 的一个对象模型工具，是基于 node-mongoldb-native 开发的 MongoDB nodes 驱动，可以在异步的环境下执行。同时它也是针对 MongoDB 操作的一个对象模型库，封装了 MongoDB 对文档的的一些增删改查等常用方法，让 NodeJS 操作 Mongodb 数据库变得更加灵活简单。
+
+### Mysql
